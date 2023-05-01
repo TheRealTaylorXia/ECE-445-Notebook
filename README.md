@@ -11,3 +11,12 @@ We met in the lab today to finish discussing some of the design decisions with t
 
 ## 4/4
 We had another meeting with our TA. Progress is looking good; Mitchel completed the assembly for the physical part of the food tray earlier last week and me and Jay got a chance to get a good look at it today. This also means our progress on the PID code can begin. Jay and I had done a little pre-research into this looking into the IMU DMP and seeing if that can be useful. We tinkered with the motors some more after the meeting, but me and Jay agreed we're both pretty busy this week and will begin development on the PID algorithm later.
+
+## 4/9
+Very good progress, we were able to make the motors move and actually manuver the balance plate today. Jay and I went to the lab early to test out all the motors but it we ran into the problem of the lab power supply units limiting the amount of output power. We had to move to using the Milwaukee 18V battery by plugging two wires into the positive and negative ports on it. We were still having some problems making the motors move smoothly, however. Afterwards, Mitchell and Jay were able to mess around with the potentimeters on the motor drivers and eventually get them to move better.
+
+## 4/11
+Found a slight problem with the IMU code we had origninally planned on using today. It turns out the code that we were running returned the rate at which the IMU was turning, not the actual angle reading. This results in the IMU's values going to 0 if you held it in the same spot for a while rather than actually changing depending on it's orientation. We spent the meeting changing around this code which effectively ended up just involving changing which registers we were reading from. We're hoping to test all 4 motors moving and getting the motors to react to the IMU readings next.
+
+## 4/13
+Had to skip going to the lab yesterday due to an exam for another class, though it seems while Jay and Mitchell were testing some things our Teensy board fried out. Fortunately, we bought multiple backups so I was able to bring my working one. Jay and Mitchell also bought some extras as well in case this happens again in the future. Today, I brought the new teensy and we soldered it to the PCB board for testing all 4 motors. It seems there was some kind of problem with out PCB though; two of the motor drivers seem to have burned out in the process of testing. We're in the process of desoldering those components, and Jay and Mitchell are redesigning a PCB.
