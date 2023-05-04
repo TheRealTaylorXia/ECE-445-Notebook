@@ -1,7 +1,34 @@
 # ECE-445-Notebook
 
+## 2/9
+Started my lab notebook so this'll be the first entry of mine. Had a meeting with Jay and Mitchell today to go over our project proposal and have that ready to submit today. Overall looks pretty good. I personally did the work on explaining which parts we picked and why. 
+
+## 2/13
+The meeting today was mainly about preparing for our first regular TA meeting tomorrow. We decided to order our parts today so we can start prototyping and breadboarding as soon as possible as well as asking our TA on any recommendations on parts. Some things we can hold back on, but we can definitely order the motors and Teensy microcontroller right now. 
+
+## 2/14
+First of the regrular TA meetings we'll have with our TA. Most of what we talked about was about our design document, how that should be made, and our parts. We then set up a meeting this weekend to go over and get a first draft of our design document ready.
+
+## 2/19
+We had a work meeting at Grainger today to just knock out some of the design document. I did a lot of the requirements and verifications as well as some of the portions in the overall design that explained what parts we were using and why we decided to use them. We got a lot of work done, but decided to stop there and continue tomorrow. After that, we should be finished and able to send in our design doc to be reviewed while we prepare for the design review presentation.
+
+## 2/28
+We had our design review today, didn't go as smoothly as hoped for to be honest. We found out that we were missing a fair amount of things from our design document. Fortunately, we still got a decent final grade on our presentation. Our TA handed us a rubric with most of the missing information which we will be working on for the next couple of meetings.
+
+## 3/06
+Today's meeting was primarily forcused on working on our revised design document and preparing that for submission. Jay also got the second Teensy he ordered, so I came with a USB to micro-USB cable and testing our some example programs on that. I mainly focused on refining our requirements and verifications, Mitchell on the cost and ethics section, and Jay on the block diagram.
+
+## 3/07
+Had our TA meeting today. Main objective was to jsut check our design document revision and make sure everything looks ok to submit. Aftwards, we dicussed what parts we had aquired and how soon we wanted to get a PCB. We decided previously that we didn't want to order a PCB from the first batch, namely because we hadn't even gotten to breadboarding yet and we wouldn't be able to get our hands on it until after spring break anyway.
+
+## 3/21
+Me and Jay compared our IMU code to eachothers. Jay and I unforunately seemed to have caught some kind of virus over break however, so we just sent the code to each other. Jay went with the approach to use circuitPython to run his IMU while I just used C code. I have to say, circuitPython looks a lot cleaner especially when it came to the I2C communication protocol. Either way, we have both sets of code on hand in case we decide to go one way or the other with how we program the entire system.
+
+## 3/23
+Both me and Jay are still sick, so no meeting in person for us. We may be able to meet up tomorrow once we both feel better, we'll just have to see how things turn out. We were still able to get a lot of work done though, mainly related to initial thoughts on the PCB design and finalizing our design document. After looking it over, we all decided it was good to submit. Otherwise, we organized to meet tomorrow in the morning to go over the mirade of things we worked on and consolidate our work.
+
 ## 3/24
-Seeing as this was our first meeting after break, today's agenda was mainly concerned with consolidating any work we'd done. Jay and I compared our code for getting the IMU working. Jay had figured out how to get readings running a circuitpython script which made readibility much nicer. I showed him my code which inclucded a section for calibration and changing some of the chip's registers to enable a low pass filter so as to reduce errant readings due to passible motor wobbling. These were added into the circuitpython code. Mitchell began to work on some of the steppor motor code and got one to move a little bit. We all had classes to get to at this time so we decided to meet again this weekend to finish.
+With this being the first in person meeting we had in a while, today's agenda was mainly concerned with consolidating any work we'd done. Jay and I compared our code for getting the IMU working. Jay had figured out how to get readings running a circuitpython script which made readibility much nicer. I showed him my code which inclucded a section for calibration and changing some of the chip's registers to enable a low pass filter so as to reduce errant readings due to passible motor wobbling. These were added into the circuitpython code. Mitchell began to work on some of the steppor motor code and got one to move a little bit. We all had classes to get to at this time so we decided to meet again this weekend to finish.
 
 ## 3/26
 Today's meeting was primarily involved in getting the steppor motors to work with the Teensy Board. Jay's purchase of the voltage regulator modules came in, so him and I soldered pins on those and tested them. Eventually, we tuned the potentiometer so that it outputs around 5 volts with an input of 18 volts. Mitchell and I also got the motors to work. We finished up the meeting discussing our PCB design.
